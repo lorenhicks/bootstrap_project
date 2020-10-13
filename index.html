@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
 <head>
     <!-- Required meta tags always come first -->
@@ -31,10 +31,12 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col-md-4 col-xl-2">
-                    <a href="#reserveForm" role="button" class="btn btn-info btn-lg mt-4" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br><strong>1-206-555-1234</strong>">Reserve Campsite</a>
+                    <a href="#reserveForm" role="button" class="btn btn-info btn-lg mt-4" data-toggle="tooltip"
+                        data-placement="bottom" data-html="true"
+                        title="Or call us at <br><strong>1-206-555-1234</strong>">Reserve Campsite</a>
                 </div>
             </div>
-        </div> 
+        </div>
     </header>
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
@@ -52,9 +54,50 @@
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><i
                                 class="fa fa-address-card fa-lg"></i> Contact</a></li>
                 </ul>
+                <span class="navbar-text ml-auto">
+                    <a role="button" data-toggle="modal" data-target="#loginModal">
+                        <i class="fa fa-sign-in"> </i> Login
+                    </a>
+                </span>
             </div>
         </div>
     </nav>
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title"> Login </h3>
+                    <button type="button" class="close" data-dismiss="modal"> &times; </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form action="">
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email address </label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword"> Password </label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input">
+                                        <label class="form-check-label"> Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" datat-dismiss="modal"> Cancel </button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1"> Sign in </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
@@ -126,7 +169,7 @@
                             <div class="form-group row">
                                 <label for="date" class="col-sm-6 col-form-label">Date</label>
                                 <div class="col">
-                                <input type="date" class="form-control" name="date" id="date" placeholder="Date">
+                                    <input type="date" class="form-control" name="date" id="date" placeholder="Date">
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -136,7 +179,7 @@
                             </div>
                         </form>
                     </div>
-                </div>                
+                </div>
             </div>
         </div>
     </div>
@@ -182,7 +225,7 @@
             $('[data-toggle="tooltip"]').tooltip()
         })
     </script>
-    
+
 
     <!-- <script>
         CheckMyCode={
@@ -193,6 +236,7 @@
         }
        </script>
        <script src="https://sparrowweb.net/cmc/checkmycode.js"></script> -->
-       
-       </body>
-       </html>
+
+</body>
+
+</html>
